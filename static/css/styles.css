@@ -1,0 +1,6 @@
+body { font-family: sans-serif; background: #121212; color: #eee; padding: 20px; }
+#app { max-width: 800px; margin: auto; }
+section { margin-bottom: 30px; padding: 15px; border: 1px solid #333; border-radius: 8px; }
+input, select, button { padding: 10px; margin: 5px; background: #222; color: white; border: 1px solid #444; }
+button:hover { background: #444; cursor: pointer; }
+.library-item { display: flex; justify-content: space-between; padding: 10px; border-bottom: 1px solid #222; }

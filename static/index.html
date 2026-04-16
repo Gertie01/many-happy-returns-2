@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Riffusion FUZZ-0.8 Editor</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Riffusion FUZZ-0.8</h1>
+            <p>Unlimited Free Generations Enabled</p>
+        </header>
+        
+        <section class="generator">
+            <input type="text" id="prompt" placeholder="Enter prompt (e.g. Synthwave in space)">
+            <button onclick="generateMusic()">Generate</button>
+            <button onclick="surpriseMe()">Surprise Me</button>
+        </section>
+
+        <section class="settings">
+            <select id="voiceSelect">
+                <option value="Random">Random Voice</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <select id="styleSelect">
+                <option value="Lo-fi">Lo-fi</option>
+                <option value="Rock">Rock</option>
+                <option value="Electronic">Electronic</option>
+            </select>
+        </section>
+
+        <section class="editor">
+            <h3>Edit Current Song</h3>
+            <input type="range" min="0" max="100" value="50" id="editSlider">
+            <button onclick="edit('extend')">Extend Song</button>
+            <button onclick="edit('vocal-swap')">Swap Vocals</button>
+            <button onclick="edit('cover')">Create Cover</button>
+        </section>
+
+        <section class="library">
+            <h3>Your Library</h3>
+            <div id="libraryList"></div>
+        </section>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
