@@ -1,0 +1,5 @@
+gradio==4.12.0
+numpy
+requests
+pydub
+soundfile
